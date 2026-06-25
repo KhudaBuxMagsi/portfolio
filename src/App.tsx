@@ -9,6 +9,7 @@ import ChatAssistant from "./components/ChatAssistant.tsx";
 import Footer from "./components/Footer.tsx";
 import { MessageSquareCode } from "lucide-react";
 import { motion } from "motion/react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -77,6 +78,7 @@ export default function App() {
         </motion.button>
       </div>
 
+      <Analytics />
     </div>
   );
 }
